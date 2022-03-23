@@ -44,9 +44,15 @@ const User = (props) => {
       <div className="d-flex justify-content-center">
         <Card style={{ width: "18rem" }}>
           <Card.Body>
-            <Card.Text>Name:{user.name}</Card.Text>
-            <Card.Text>PhoneNumber:{user.email}</Card.Text>
-            <Card.Text>Location:{user.gen}</Card.Text>
+            <Card.Text className="text-primary">
+              Name: <span className="text-dark">{user.name}</span>
+            </Card.Text>
+            <Card.Text className="text-primary">
+              PhoneNumber: <span className="text-dark">{user.email}</span>
+            </Card.Text>
+            <Card.Text className="text-primary">
+              Location: <span className="text-dark">{user.gen}</span>
+            </Card.Text>
             <Button
               onClick={() => setIsShowing(true)}
               variant="outline-primary"
