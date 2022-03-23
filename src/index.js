@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./store";
-import "bootswatch/dist/yeti/bootstrap.min.css";
+import "bootswatch/dist/darkly/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>

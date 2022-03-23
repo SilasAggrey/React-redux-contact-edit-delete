@@ -53,16 +53,18 @@ const User = (props) => {
             <Card.Text className="text-primary">
               Location: <span className="text-dark">{user.gen}</span>
             </Card.Text>
-            <Button
-              onClick={() => setIsShowing(true)}
-              variant="outline-primary"
-              size="lg"
-            >
-              Edit
-            </Button>
-            <Button variant="outline-danger" size="lg" onClick={handleDelete}>
-              Delete
-            </Button>
+            <div className="d-flex justify-content-between">
+              <Button
+                onClick={() => setIsShowing(true)}
+                variant="outline-primary"
+                size="lg"
+              >
+                Edit
+              </Button>
+              <Button variant="outline-danger" size="lg" onClick={handleDelete}>
+                Delete
+              </Button>
+            </div>
           </Card.Body>
         </Card>
       </div>
@@ -92,7 +94,7 @@ const User = (props) => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleSubmit}>
+          <Button className="me-3" variant="primary" onClick={handleSubmit}>
             Save Changes
           </Button>
         </Modal.Footer>
