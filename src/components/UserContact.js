@@ -61,7 +61,7 @@ const UserContact = () => {
             onChange={(e) => setLocation(e.target.value)}
           />
         </FormGroup>
-        <button type="submit" class="w-100 mt-2 btn btn-primary">
+        <button type="submit" className="w-100 mt-2 btn btn-primary">
           Submit
         </button>
       </Form>
