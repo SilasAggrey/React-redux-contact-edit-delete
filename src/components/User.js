@@ -42,16 +42,16 @@ const User = (props) => {
   return (
     <>
       <div className="d-flex justify-content-center">
-        <Card style={{ width: "18rem" }}>
-          <Card.Body>
-            <Card.Text className="text-primary">
-              Name: <span className="text-dark">{user.name}</span>
+        <Card style={{ width: "22rem" }}>
+          <Card.Body className="fs-4">
+            <Card.Text className="text-primary ">
+              Name: <span className="text-white">{user.name}</span>
             </Card.Text>
             <Card.Text className="text-primary">
-              PhoneNumber: <span className="text-dark">{user.email}</span>
+              PhoneNumber: <span className="text-white">{user.email}</span>
             </Card.Text>
             <Card.Text className="text-primary">
-              Location: <span className="text-dark">{user.gen}</span>
+              Location: <span className="text-white">{user.gen}</span>
             </Card.Text>
             <div className="d-flex justify-content-between">
               <Button
