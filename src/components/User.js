@@ -45,10 +45,7 @@ const User = (props) => {
         <Card style={{ width: "22rem" }}>
           <Card.Body className="fs-4">
             <Card.Text className="text-primary ">
-              Name:{" "}
-              <span className="text-white" class>
-                {user.name}
-              </span>
+              Name: <span className="text-white">{user.name}</span>
             </Card.Text>
             <Card.Text className="text-primary">
               PhoneNumber: <span className="text-white">{user.email}</span>

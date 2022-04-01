@@ -60,7 +60,7 @@ const Login = () => {
         </h1>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+            <Form.Label className="text-black">Email address</Form.Label>
             <Form.Control
               type="email"
               placeholder="Enter email"
@@ -73,7 +73,7 @@ const Login = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
+            <Form.Label className="text-black">Password</Form.Label>
             <Form.Control
               type="password"
               placeholder="Password"
@@ -81,16 +81,26 @@ const Login = () => {
               value={password}
             />
           </Form.Group>
-          <Button variant="primary" type="submit" onClick={handleLogin}>
-            Submit
-          </Button>
-          <Button variant="primary" type="submit" onClick={signInWithGoogle}>
-            Sign in with Google
-          </Button>
+          <div className="d-flex justify-content-between">
+            <Button
+              variant="outline-primary"
+              type="submit"
+              onClick={handleLogin}
+            >
+              Submit
+            </Button>
+            <Button
+              variant="outline-warning"
+              type="submit"
+              onClick={signInWithGoogle}
+            >
+              Sign in with Google
+            </Button>
 
-          <p>
-            Don't have an account? <Link to="/register">Register</Link>
-          </p>
+            <p className="text-black">
+              Don't have an account? <Link to="/register">Register</Link>
+            </p>
+          </div>
         </Form>
       </div>
     </div>
